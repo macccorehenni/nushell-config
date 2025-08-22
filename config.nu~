@@ -1,0 +1,48 @@
+# config.nu
+#
+# Installed by:
+# version = "0.106.1"
+#
+# This file is used to override default Nushell settings, define
+# (or import) custom commands, or run any other startup tasks.
+# See https://www.nushell.sh/book/configuration.html
+#
+# Nushell sets "sensible defaults" for most configuration settings, 
+# so your `config.nu` only needs to override these defaults if desired.
+#
+# You can open this file in your default editor using:
+#     config nu
+#
+# You can also pretty-print and page through the documentation for configuration
+# options using:
+#     config nu --doc | nu-highlight | less -R
+$env.PATH = ($env.PATH | append "C:/Users/CReape/git/bin")
+def add-to-path [new_path: string] {
+  let clean_path = ($new_path | str replace '\\' '/')
+  if ($env.PATH | any {|p| $p == $clean_path }) {
+    print $"Path already exists: ($clean_path)"
+  } else {
+    $env.PATH = ($env.PATH | append $clean_path)
+    let config_line = '$env.PATH = ($env.PATH | append "' + $clean_path + '")'
+    echo $config_line | save --append ($nu.config-path)
+    print $"Added to PATH and saved: ($clean_path)"
+  }
+}
+def edit-config [editor: string] {
+try {
+if ($editor != null) {
+  ^($editor) ($nu.config-path)
+}
+catch {
+let span = (metadata $x).span;
+error make {
+msg: "No editor provided"
+label: {
+text: "Provide an editor here"
+span: $span}}}
+}}	
+$env.PATH = ($env.PATH | append "C:/Users/CReape/git/bin")
+$env.jumpto = {
+project-the-ten: "C:/Users/CReape/iCloudDrive/ten-stories"
+}
+

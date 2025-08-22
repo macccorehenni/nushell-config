@@ -1,0 +1,266 @@
+clear
+^git
+git
+pwd
+cd Git
+ls
+cd ..
+ls
+cd GitPortable
+ls
+cd Git
+ls
+^git-bash.exe
+https://github.com/macccorehenni/ten-stories-publish.git
+ls
+cd
+cd Git
+ls
+mv ten-stories-publish\ ..
+ls|more
+clear
+ls
+cd ..
+ls
+cd ten-stories-publish\
+ls
+ls -A
+ls -a
+git
+commands|less
+help commands 
+commands|flatten
+ls|flatten
+sys users
+sys users|flatten
+sys users|flatten|unique
+sys users|flatten|uniqu
+sys users|flatten|uniq
+sys users|flatten
+git
+&^git
+powershell
+ls
+cd git|ls
+help commands|page
+help commands
+cd bin
+ls
+alias git "git.exe"
+alias git = "git.exe"
+ls
+pwd
+config nu
+$nu.config-path
+readline
+help commands|grep "line<\n>"
+help commands|filter "line<\n>"
+help commands|filter
+help commands|filter ("line")
+help commands
+clear
+help commands|explore
+$nu.config-path|commandline edit
+$nu.config-path|commandline
+ls
+help commands|explore
+ls
+pwd
+open ($nu.config-path) | upsert env.PATH ($it.env.PATH | append 'C:\Users\CReape\git\bin') | save ($nu.config-path)
+open ($nu.config-path) | upsert env.PATH ($env.PATH | append 'C:\Users\CReape\git\bin') | save ($nu.config-path)
+open ($nu.config-path) | env.PATH ($env.PATH | append 'C:\Users\CReape\git\bin') | save ($nu.config-path)
+open ($nu.config-path) | update env.PATH ($it.env.PATH ++ ['C:\Users\CReape\git\bin']) | save ($nu.config-path)
+open ($nu.config-path) | update env.PATH ($env.PATH ++ ['C:\Users\CReape\git\bin']) | save ($nu.config-path)
+echo '$env.PATH = ($env.PATH | append "C:\Users\CReape\git\bin")' | save --append ($nu.config-path)
+source $nu.config-path
+edit $nu.config-path
+$nu.config-path
+source $nu.config-path
+git
+def add-to-path [new_path: string] {<\n>  let clean_path = ($new_path | str replace '\\' '/')<\n>  if ($env.PATH | any {|p| $p == $clean_path }) {<\n>    print $"Path already exists: ($clean_path)"<\n>  } else {<\n>    $env.PATH = ($env.PATH | append $clean_path)<\n>    let config_line = '$env.PATH = ($env.PATH | append "' + $clean_path + '")'<\n>    echo $config_line | save --append ($nu.config-path)<\n>    print $"Added to PATH and saved: ($clean_path)"<\n>  }<\n>}
+clear
+$nu.config-path
+source $nu.config-path
+pwd|add-to-path
+add-to-path (pwd)
+winget install obsidian
+config nu
+git
+ls
+pwd
+git clone https://github.com/macccorehenni/ten-stories.git
+cd
+ls
+cd git
+ls
+cd bin
+ls
+pwd
+git status
+cd
+ls
+gototheten
+cd ten-stories
+ls
+git
+git status
+git push
+gh
+winget install github.cli
+git push
+git remote add
+git remote set-url origin https://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@github.com/macccorehenni/ten-stories.git
+git sync
+git commit -a
+git push
+git status
+git add .
+git sync
+git push
+git commit -m "continued work on Ch2"
+git push
+git add .
+git commit -m "updated % in index"
+git add.
+git push
+pwd
+ls
+cd `Main Story\`
+ls
+mv index.md README.md
+ls
+git commit -am "Oops, git seems to have broken Flowershow"
+git status
+git add .
+git commit -am "Oops, git seems to have broken Flowershow"
+git push
+git status
+git
+ls
+cd ten-stories\
+git edit-remote
+git --help
+git remote set-url origin https://codeberg.org/macccorehenni/ten-stories.git
+git pull
+git add .
+git commit -m "Initial commit on Codeberg<\n>"
+git commit -m "Initial commit on Codeberg"
+touch "pass"
+git add .
+git commit -m "Initial commit on Codeberg"
+git push
+git commit -m "Initial commit on Codeberg"
+git push
+git remote create gh https://github.com/macccorehenni/ten-stories.git
+git remote add https://github.com/macccorehenni/ten-stories.git
+git remote add  gh https://github.com/macccorehenni/ten-stories.git
+git remote add gh https://github.com/macccorehenni/ten-stories.git
+git push --set-upstream gh def
+git remote add gh https://github.com/macccorehenni/ten-stories.git
+git remote set-url gh https://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@github.com/macccorehenni/ten-stories.git
+git push --set-upstream gh def
+ls|explore
+cd iCloudDrive\
+cd iCloud~md~obsidian\
+notepad ($nu.config_path)
+cd iCloudDrive\
+ls
+cd ten-stories\
+pwd
+source $nu.config-path
+source ($nu.config-path)
+notepad ($nu.config-path)
+clear
+cd $env.jumpto.project-the-ten
+notepad ($nu.config-path)
+source ($nu.config-path)
+cd $env.jumpto.project-the-ten
+git status
+git add .
+rm .git/index
+git reset --mixed
+git add .
+error: The Rapture/The Raputure part 1 Ch 1(1).md: failed to insert into database
+error: unable to index file 'The Rapture/The Raputure part 1 Ch 1(1).md'
+fatal: adding files failed
+rm -f .git/index
+git reset
+git add .
+cd $env.jumpto.project-the-ten
+git status
+git add
+git add .
+cd ..
+mv ten-stories\ ~
+rm -rf ten-stories
+cd
+rm -rf ten-stories
+git clone https://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@github.com/macccorehenni/ten-stories.git
+git add .
+cd ten-stories\
+git
+git add
+git add .
+git commit -m "Redid Rapture folder after being dumb and not copying it to my home folder for safe keeping, completely forgetting that I had added that today on alberts-dell-pc; restarted Rapture/Skeleton"
+git push --set-upstream origin def
+ls
+ls|select name
+rm pass
+ls
+git
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+pwsh
+ps
+powershell
+scoop help
+^scoop
+clear
+ext
+exit
+scoop
+scoop search obsidian
+notepad ($nu.config-path)
+source ($nu.config-path)
+notepad ($nu.config-path)
+source ($nu.config-path)
+notepad ($nu.config-path)
+source ($nu.config-path)
+notepad ($nu.config-path)
+edit-config notepad
+notepad ($nu.config-path)
+edit-config notepad
+source ($nu.config-path)
+edit-config notepad
+edit-config emacs
+emacs
+scoop search emacs
+scoop info emacs
+scoop bucket add emacs
+scoop bucket add extras
+scoop info emacs
+scoop install emacs
+emacs
+edit-config emacs
+edit-config emacs-client
+edit-config emacsclient
+edit-config emacs
+try
+edit-config emacs
+emacs.exe 
+edit-config emacs
+source ($nu.config-path)
+edit-config emacs
+source ($nu.config-path)
+edit-config
+edit-config --help
+print ($nu.config-path)
+cd C:\Users\CReape\AppData\Roaming\nushell\
+git init
+git add remote origin 
+gh create
+scoop search gh
+scoop install gh
+gh auth login
+github repo create
+gh repo create
+git commit -am "initial commit"
