@@ -264,3 +264,48 @@ gh auth login
 github repo create
 gh repo create
 git commit -am "initial commit"
+git add .
+git commit -m "initial commit"
+git push
+git push set-upstream origin master
+git push set-upstream origin def
+git push --set-upstream origin def
+git remote -v
+git repo view --online 
+gh repo view --online 
+gh repo view -w
+git branch -M def
+git push --set-upstream origin def
+ls
+open env.nu|print
+touch functions.nu
+edit-config emacs
+edit-config notepad
+$nu.vendor-autoload-dirs
+cd C:\Users\CReape\AppData\Roaming\nushell\vendor\autoload
+ls
+mkdir vendor
+mkdir autoload
+cd ..
+cd nushell\
+ls
+mv autoload vendor/autoload
+mv functions.nu vendor/autoload
+cd vendor/autoload
+ls
+$nu.user-autoload-dirs
+cd ..
+rm -r vendor
+mkdir autoload
+touch autoload/functions.nu
+emacs functions.nu
+notepad ($nu.config-path)
+source ($nu.config-path)
+ls
+($nu.config-path)
+C:\Users\CReape\AppData\Roaming\nushell\
+git commit -am
+git add .
+cd autoload
+ls
+cd ..

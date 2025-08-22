@@ -1,0 +1,2 @@
+#functions.nu— user defined functions
+#note that since this file is situated in the folder described by ($nu.user-autoload-dirs), it should automatically load
