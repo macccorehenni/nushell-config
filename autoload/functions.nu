@@ -11,16 +11,7 @@ def add-to-path [new_path: string] {
   }
 }
 def edit-config [editor: string] {
-try {
-if ($editor != null) {
-  ^($editor) ($nu.config-path)
+  ^($editor) ($nu.config-path)|source ($nu.config-path)
 }
-catch {
-let span = (metadata $editor).span;
-error make {
-msg: "No editor provided"
-label: {
-text: "Provide an editor here"
-span: $span}}}
-}}	
+
 

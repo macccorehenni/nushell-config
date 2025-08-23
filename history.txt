@@ -309,3 +309,85 @@ git add .
 cd autoload
 ls
 cd ..
+add-to-path
+edit-config notepad
+cd $env.jumpto.config
+edit-config notepad
+cd $env.jumpto.config-folder
+cd $env.jumpto.config_folder
+source ($nu.config-path)
+edit-config notepad
+;s
+pwd
+source ($nu.config-path)
+cd $env.jumpto.config_folder
+cd $env.jumpto.config-folder
+cd autoload
+ls
+notepad functions.nu
+source ($nu.config-path)
+source *
+source functions.nu
+"${$nu.home-path}/ten-stories"
+print "${$nu.home-path}/ten-stories"
+$nu.home-path | path join "ten-stories"
+ls|select name
+edit-config notepad
+clear
+edit-config notepad
+$jumpto
+source ($nu.config-path)
+edit-config notepad
+source ($nu.config-path)
+edit-config notepad
+source ($nu.config-path)
+edit-config notepad
+source ($nu.config-path)
+cd $env.jumpto.iCloud
+cd<\n>
+clear
+edit-config notepad
+($nu.data-dir)/autorun/functions.nu
+clear
+cd $env.jumpto.autorun-folder
+source ($nu.config-path)
+cd $env.jumpto.autorun-folder
+cd $env.jumpto.config-folder
+ls
+edit-config notepad
+cd $env.jumpto.autorun-folder
+cd $env.jumpto.autoload-folder
+edit-config notepad
+source ($nu.config-path)
+cd $env.jumpto.autoload-folder
+notepad functions.nu
+source ($nu.config-path)
+edit-config notepad
+cd $env.jumpto.iCloudPhotos
+cd $env.jumpto.iCloud
+cd
+edit-config emacs
+edit-config vi
+edit-config view
+edit-config emacs
+edit-config nano
+clear
+cd $env.jumpto.iCloud-Photos
+source ($nu.config-path)
+edit-config notepad
+source ($nu.config-path)\
+source ($nu.config-path)
+ls
+cd $env.jumpto.iCloud-Photos
+ls
+cd Photos
+ls
+ls|explore
+cd
+clear
+ls
+clear
+cd $env.jumpto.config-folder
+git add .
+git push
+ls
